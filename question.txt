@@ -1,0 +1,32 @@
+Lab6: Dense Vector (embedding)
+Date & Time: 19 Aug 2025, 10:45 PM - 20 Aug 2025, 10:00 PM
+
+Word2Vec (Prediction based models) - k position away from center word - context words. May use k between 2 to 5 for large corpus collections
+Plot the similarity scores of N chosen words from the collections.
+Find the closest N words for a given word X.
+Note: Use gensim or keras for the implementation.
+
+Use skip-gram and CBoW for the above processes.
+
+Note: refer attached code in google classroom and follow the methodology for implementation.
+CBow_np
+Skipgram_ns
+Dense Vector
+
+
+Methodology for Dense Vector:
+Data Preprocessing:
+Use a large corpus of text to train the Word2Vec model. Preprocess the text data by tokenizing sentences, removing stopwords, punctuation, and other irrelevant characters.
+
+Model Training with Word2Vec:
+Train both CBoW and Skip-Gram models using any library.
+For Skip-Gram, use sg=1 in the Word2Vec model. For CBoW, use sg=0.
+Set a window size k (typically between 2 and 5) that defines the maximum distance between the current and predicted words within a sentence.
+
+Find the Closest Words:
+After training, use the model to find the closest N words for a given word X based
+on cosine similarity scores.
+
+Plot Similarity Scores:
+Select N words from the vocabulary and compute the pairwise cosine similarity scores between them.
+Visualize these similarity scores using a heatmap or scatter plot to understand how words cluster in vector space.
